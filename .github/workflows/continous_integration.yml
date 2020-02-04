@@ -3,13 +3,17 @@ name: Continous Integration
 
 on: [push, pull_request]
 
-steps:
-  - uses: actions/checkout@v1
-  - uses: actions/setup-node@v1
-    with:
-      node-version: 12.x
-  - run: export JTR_ROOT=~/jtr
-  - run: yarn install
-  - run: yarn build
-  - run: yarn lint
-  - run: yarn test
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: yarn install
+      - run: yarn build
+      - run: yarn lint
+      - run: yarn test
+        env:
+          JTR_ROOT: ~/jtr
