@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"install": "yarn --cwd frontend install && yarn --cwd backend install",
+		"build": "yarn --cwd frontend buildprod && yarn --cwd backend build",
+		"lint": "yarn --cwd frontend lint && yarn --cwd backend lint",
+		"test": "yarn --cwd frontend test && yarn --cwd backend test"
+	}
+}
