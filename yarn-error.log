@@ -1,0 +1,31 @@
+Arguments: 
+  /home/ksi/.nvm/versions/node/v12.14.1/bin/node /home/ksi/.nvm/versions/node/v12.14.1/bin/yarn --help
+
+PATH: 
+  /home/ksi/.nvm/versions/node/v12.14.1/bin:/home/ksi/.krew/bin:/usr/local/bin:/usr/local/sbin:/home/ksi/.krew/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/kaspe/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/kaspe/AppData/Local/Programs/Microsoft VS Code/bin:/home/ksi/.local/bin:/home/ksi/.local/bin:/home/ksi/.yarn/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/ksi/Programming/js/workspace_pwcrack/PWCrack/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/ksi/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/ksi/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/ksi/.nvm/versions/node/v12.14.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
