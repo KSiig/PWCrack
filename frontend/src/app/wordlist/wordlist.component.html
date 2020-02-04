@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="new__wordlist">
+    <form [formGroup]="newWordlistForm" class="new__wordlist__form">
+      <mat-form-field>
+        <input matInput type="text" class="start__name" placeholder="Name of new wordlist.." formControlName="name" />
+      </mat-form-field>
+      <div class="wordlist__file">
+        <div class="wordlist__file__icon">
+          <label class="new-wordlist-icon-button">
+            <i class="material-icons">cloud_upload</i>
+            <input id="file" class="none" type="file" (change)="chooseNewWordlist($event)" />
+          </label>
+        </div>
+        <span class="wordlist__file__text">{{ filename }}</span>
+      </div>
+      <button mat-button class="new__wordlist__submit" (click)="onSubmit()">
+        Create new wordlist
+      </button>
+    </form>
+  </div>
+  <div class="wordlist__title">
+    <span></span>
+    <span></span>
+    <button mat-button [disableRipple]="true" class="wordlisttitle__name">Name</button>
+    <button mat-button [disableRipple]="true" class="wordlisttitle__path">Path</button>
+  </div>
+  <div class="wordlist__list">
+    <form [formGroup]="editForm">
+        <span *ngFor="let wordlist of wordlists" class="wordlists__list__option">
+          <mat-icon (click)="delete(wordlist._id)" class="wordlists__list__options__delete">delete</mat-icon>
+          <mat-icon (click)="edit(wordlist._id)" class="wordlists__list__options__edit"
+                    *ngIf="updating !== wordlist._id">edit</mat-icon>
+          <mat-icon (click)="save(wordlist._id)" *ngIf="updating === wordlist._id">check</mat-icon>
+          <mat-form-field *ngIf="updating === wordlist._id">
+            <input matInput type="text" [value]="wordlist.name" formControlName="{{'name' + wordlist._id}}">
+          </mat-form-field>
+          <mat-form-field *ngIf="updating === wordlist._id">
+            <input matInput type="text" [value]="wordlist.path" formControlName="{{'path' + wordlist._id}}">
+          </mat-form-field>
+          <span *ngIf="updating !== wordlist._id">{{ wordlist.name}}</span>
+          <span *ngIf="updating !== wordlist._id">{{ wordlist.path}}</span>
+        </span></form>
+  </div>
+</div>

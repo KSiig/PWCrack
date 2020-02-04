@@ -1,0 +1,37 @@
+.container {
+	border-bottom: 1px solid black;
+}
+
+.job {
+	padding: 0.5em;
+	align-items: center;
+	grid-template-columns: [first] 30% [line2] 30% [line3] 15% [line4] 15% [line5] 40%;
+	display: grid;
+}
+
+.job__btn {
+	margin-right: 50px;
+	background-color: #114B5F;
+	color: #C6DABF;
+	font-weight: normal;
+}
+
+.job__status {
+	height: 25px;
+	width: 25px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.job__status__green {
+	background-color: green;
+}
+
+.job__status__yellow {
+	background-color: yellow;
+}
+
+.job__status__red {
+	background-color: red;
+}

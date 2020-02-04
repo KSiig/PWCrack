@@ -1,0 +1,85 @@
+.container {
+	margin: 0 auto;
+}
+
+.new__wordlist__form {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.wordlist__file__icon {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	align-self: center;
+	justify-content: flex-end;
+	margin-right: 1em;
+}
+
+.new-wordlist-icon-button {
+	width: 40px;
+	height: 40px;
+	color: #C6DABF;
+	background-color: #114B5F;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wordlist__file {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+}
+
+.wordlists__file__text {
+	align-self: center;
+}
+
+//Hides "Choose file" button and "What file/No has been chosen"
+.none {
+	display: none !important;
+}
+
+.new__wordlist__submit {
+	background-color: #114B5F;
+	color: #C6DABF;
+	flex-grow: 0.15;
+	align-self: center;
+	align-content: stretch;
+}
+
+.wordlist__title {
+	display: grid;
+	grid-template-columns: [first] 1.5% [line2] 2% [line3] 26% [line4] 26% [line5] 50%;
+	column-gap: 1em;
+	background-color: #114B5F;
+	color: #C6DABF;
+	padding: 0.5em;
+	width: 79%;
+	margin: 0 auto;
+}
+
+.wordlisttitle__name, .wordlisttitle__path {
+	text-align: start;
+}
+
+.wordlists__list__option {
+	grid-template-columns: [first] 2% [line2] 2% [line3] 26% [line4] 26% [line5] 50%;
+	display: grid;
+	column-gap: 1em;
+	padding: 0.9em;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	width: 78%;
+	align-items: center;
+}
+
+.wordlists__list__option mat-icon {
+	font-size: 1.2em;
+	cursor: pointer;
+}
+

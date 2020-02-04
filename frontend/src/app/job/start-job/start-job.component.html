@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="start">
+		<form [formGroup]="jobForm" class="start__form">
+			<mat-form-field>
+				<input matInput type="text" class="start__name" placeholder="Name..." formControlName="name" />
+			</mat-form-field>
+			<div class="start__file">
+				<div class="start__file__icon">
+					<label>
+						<i class="material-icons">cloud_upload</i>
+						<input id="file" class="none" type="file" (change)="chooseFile($event)" />
+					</label>
+				</div>
+				<span class="start__file__text">{{ filename }}</span>
+			</div>
+			<mat-form-field>
+				<mat-select class="start__wordlists" formControlName="wordlist" placeholder="Wordlist...">
+					<mat-option *ngFor="let wordlist of wordlists" [value]="wordlist" class="start__wordlists__option">
+						{{ wordlist.name }}</mat-option>
+				</mat-select>
+			</mat-form-field>
+			<mat-form-field>
+				<mat-select class="start__rules" formControlName="rule" placeholder="Rule...">
+					<mat-option *ngFor="let rule of rules" [value]="rule" class="start__rule__option">
+						{{ rule }}</mat-option>
+				</mat-select>
+			</mat-form-field>
+			<button mat-button class="start__submit" (click)="onSubmit()">
+				Start Job
+			</button>
+		</form>
+	</div>
+</div>

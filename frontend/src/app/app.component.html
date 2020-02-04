@@ -1,0 +1,13 @@
+<mat-toolbar class="toolbar">
+	<span class="toolbar__title">PWCrack</span>
+	<ng-container *ngFor="let tab of tabs">
+		<span
+			class="toolbar__tab"
+			[routerLink]="tab.url"
+			routerLinkActive="toolbar__tab--active"
+			>{{ tab.title }}</span
+		>
+	</ng-container>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
