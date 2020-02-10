@@ -1260,10 +1260,10 @@
     tree-kill "1.2.2"
     webpack-sources "1.4.3"
 
-"@ngxs/router-plugin@^3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@ngxs/router-plugin/-/router-plugin-3.6.1.tgz#e491d1b2afb451cc035a3f812c071f9c3578b3ed"
-  integrity sha512-0jXCBRHjGWHGxnPI+jBI4yPlmtIynSAeolyLPsUv1IwDpaAsY8L/pW1QYThxcFUC+adwq2lYdpNyESn6R9vhfA==
+"@ngxs/router-plugin@^3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@ngxs/router-plugin/-/router-plugin-3.6.2.tgz#058b09565011203bbf52294f16f29f9337aeaa27"
+  integrity sha512-5J3G9+Qsy/s7iqFivzAN1S6EmaZYTb9hqz7Xjn3c0u3Y44VMP5VWiz77jZ/eowXX0slJywcMxk6oCEFPwz4lXQ==
   dependencies:
     tslib "^1.9.0"
 
